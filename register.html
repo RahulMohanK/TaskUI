@@ -14,10 +14,42 @@
     </div>
     <div class="main">
         <div>
-            <h1 style="text-align: center;">search</h1>
+            <h1 style="text-align: center;" id="hReg">Register</h1>
+        </div>
+
+        <div align="center">
+            <form>
+                <label>Employee Id :</label><br>
+                <input type="text" id="IEmpId" /><br><br>
+                <label>Name :</label><br>
+                <input type="text" id="IName" /><br><br>
+                <label>Email :</label><br>
+                <input type="text" id="IEmail" /><br><br>
+                <label>Phone :</label><br>
+                <input type="text" id="IPhone" /><br><br>
+                <label>Date of Birth :</label><br>
+                <input type="datetime" id="IDob" /><br><br>
+
+                <label for="Staff">Choose a Staff:</label><br>
+                <select id="Staff"><br><br>
+                    <option value="admin">Administrative Staff</option>
+                    <option value="teaching">Teaching Staff</option>
+                    <option value="support">Supporting Staff</option>
+                </select>&nbsp;&nbsp;&nbsp;
+
+                <button type="button" id="btndisplay" onclick="displayStaffType()">Load</button><br><br>
+                <div id="SpecificFields">
+                </div>
+                <button type="button" onclick="getValues()" id="registerSubmit">Submit</button><br>
+                <button type="button" onclick="EditStaff()" id="registerEdit" style="visibility: hidden;">Edit</button>
+
+            </form>
         </div>
 
     </div>
+    <script src="Scripts/AddStaff.js">
+    </script>
+    <script src="Scripts/EditStaff.js"></script>
 </body>
 
 </html>
