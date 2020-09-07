@@ -12,6 +12,14 @@ if (queries[0] == 'empId') {
     document.getElementById("Staff").disabled = true;
 
 }
+
+var modal = document.getElementById('notification');
+window.onclick = function (event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+
 async function getData(url) {
     let response = await fetch(url, {
         method: 'GET',
@@ -113,6 +121,13 @@ function EditStaff() {
         .then(response => response.json())
 
 
-        .then(json => console.log(json));
+        .then(json => console.log(json))
+        .then(notify());
+
+
+}
+function notify() {
+    document.getElementById('notification-heading').innerHTML = "Edit Successfull";
+    document.getElementById('notification').style.display = 'block';
 
 }

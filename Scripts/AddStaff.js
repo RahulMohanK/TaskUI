@@ -58,9 +58,13 @@ function getValues() {
         .then(response => response.json())
 
 
-        .then(json => console.log(json));
+        .then(json => console.log(json))
+        .then(notifySubmit());
 }
-
+function notifySubmit() {
+    document.getElementById('notification-heading').innerHTML = "Registration Successfull";
+    document.getElementById('notification').style.display = 'block';
+}
 function displayStaffType() {
     var SpecificField;
     var x = document.getElementById("Staff").selectedIndex;

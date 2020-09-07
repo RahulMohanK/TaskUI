@@ -6,6 +6,7 @@
     <meta content="utf-8" http-equiv="encoding">
     <link rel="stylesheet" href="Stylesheets/Sidebar.css" />
     <link rel="stylesheet" href="Stylesheets/Form.css" />
+    <link rel="stylesheet" href="Stylesheets/NotificationModal.css" />
 </head>
 
 <body>
@@ -50,6 +51,15 @@
                         class="registerEdit">Edit</button>
                 </div>
 
+            </form>
+        </div>
+        <div id="notification" class="modal">
+            <span onclick="document.getElementById('notification').style.display='none'" class="close"
+                title="Close Modal">&times;</span>
+            <form class="modal-content">
+                <div class="modal-container">
+                    <h2 id="notification-heading"></h2>
+                </div>
             </form>
         </div>
 
