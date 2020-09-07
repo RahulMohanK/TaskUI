@@ -8,6 +8,9 @@ if (queries[0] == 'empId') {
     document.getElementById('registerSubmit').style.visibility = 'hidden';
     document.getElementById('registerEdit').style.visibility = 'visible';
     document.getElementById("IEmpId").readOnly = true;
+    document.getElementById("btndisplay").disabled = true;
+    document.getElementById("Staff").disabled = true;
+
 }
 async function getData(url) {
     let response = await fetch(url, {
