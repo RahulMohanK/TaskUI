@@ -4,7 +4,7 @@ var queries = queryString.split("=");
 var EmpId = queries[1];
 if (queries[0] == 'empId') {
     EditStaffValues();
-    document.getElementById("hReg").innerHTML = "Edit";
+    document.getElementById("hReg").innerHTML = "EDIT STAFF";
     document.getElementById('registerSubmit').style.visibility = 'hidden';
     document.getElementById('registerEdit').style.visibility = 'visible';
     document.getElementById("IEmpId").readOnly = true;
@@ -28,11 +28,10 @@ function showData(result) {
     document.getElementById("IEmail").value = result.email == undefined ? "" : result.email;
     document.getElementById("IPhone").value = result.phone == undefined ? "" : result.phone;
     document.getElementById("IDob").value = result.dob == undefined ? "" : result.dob;
-    if (result.staffType == 0) {
-        document.getElementById('Staff').value = 'admin';
+    if (result.staffType == 2) {
+        document.getElementById('Staff').value = 'support';
         document.getElementById('btndisplay').onclick = displayStaffType();
-        document.getElementById("IDesignation").value = result.administrativeStaff[0].designation == undefined ? "" : result.administrativeStaff[0].designation;
-
+        document.getElementById("IDepartment").value = result.supportingStaff[0].department == undefined ? "" : result.supportingStaff[0].department;
     }
     else if (result.staffType == 1) {
         document.getElementById('Staff').value = 'teaching';
@@ -40,9 +39,9 @@ function showData(result) {
         document.getElementById("ISubject").value = result.teachingStaff[0].subject == undefined ? "" : result.teachingStaff[0].subject;
     }
     else {
-        document.getElementById('Staff').value = 'support';
+        document.getElementById('Staff').value = 'admin';
         document.getElementById('btndisplay').onclick = displayStaffType();
-        document.getElementById("IDepartment").value = result.supportingStaff[0].department == undefined ? "" : result.supportingStaff[0].department;
+        document.getElementById("IDesignation").value = result.administrativeStaff[0].designation == undefined ? "" : result.administrativeStaff[0].designation;
     }
 
 

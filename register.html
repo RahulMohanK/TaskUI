@@ -5,6 +5,7 @@
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
     <meta content="utf-8" http-equiv="encoding">
     <link rel="stylesheet" href="Stylesheets/Sidebar.css" />
+    <link rel="stylesheet" href="Stylesheets/Form.css" />
 </head>
 
 <body>
@@ -13,11 +14,13 @@
         <a href="file:///C:/Users/Workstation/Desktop/StaffUI/register.html">Register</a>
     </div>
     <div class="main">
-        <div>
-            <h1 style="text-align: center;" id="hReg">Register</h1>
-        </div>
 
-        <div align="center">
+
+        <div class="continer">
+            <div>
+                <h1 style="text-align: center;" id="hReg">REGISTER</h1>
+            </div>
+            <hr>
             <form>
                 <label>Employee Id :</label><br>
                 <input type="text" id="IEmpId" /><br><br>
@@ -40,8 +43,12 @@
                 <button type="button" id="btndisplay" onclick="displayStaffType()">Load</button><br><br>
                 <div id="SpecificFields">
                 </div>
-                <button type="button" onclick="getValues()" id="registerSubmit">Submit</button><br>
-                <button type="button" onclick="EditStaff()" id="registerEdit" style="visibility: hidden;">Edit</button>
+                <div class="vertical-center">
+                    <button type="button" onclick="getValues()" id="registerSubmit"
+                        class="registerSubmit">Submit</button><br>
+                    <button type="button" onclick="EditStaff()" id="registerEdit" style="visibility: hidden;"
+                        class="registerEdit">Edit</button>
+                </div>
 
             </form>
         </div>
