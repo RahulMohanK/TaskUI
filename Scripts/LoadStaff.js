@@ -1,6 +1,11 @@
-
-var url = 'https://localhost:8001/Staff/?type='
-
+var queryString = decodeURIComponent(window.location.search);
+queryString = queryString.substring(1);
+var queries = queryString.split("=");
+var editStaffType = queries[1];
+if (queries[0] == 'staffType') {
+    console.log("edit" + editStaffType);
+}
+var url;
 getHeading();
 async function getData(url) {
     let response = await fetch(url, {
@@ -67,7 +72,7 @@ function getHeading() {
                 <th>Dob</th>
                 <th>Designation</th>
             </tr>`;
-        url = 'https://localhost:8001/Staff/?type=admin';
+        url = 'admin';
     }
     else if (staffType == "teaching") {
         showType = 'teaching';
@@ -81,7 +86,7 @@ function getHeading() {
                 <th>Dob</th>
                 <th>Subject</th>
             </tr>`;
-        url = 'https://localhost:8001/Staff/?type=teaching';
+        url = 'teaching';
     }
     else {
         showType = 'support';
@@ -91,16 +96,15 @@ function getHeading() {
                 <th>EmpId</th>
                 <th>Name</th>
                 <th>Phone</th>
-                <th>Email</th>
-                
+                <th>Email</th>      
                 <th>Dob</th>
                 <th>Department</th>
             </tr>`;
-        url = 'https://localhost:8001/Staff/?type=support';
+        url = 'support';
     }
 
     document.getElementById("staffTable").innerHTML = heading;
-    getData(url)
+    getData('https://localhost:8001/Staff/?type=' + url)
         .then(data => {
             console.log(data);
             showData(data, showType);

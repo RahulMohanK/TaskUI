@@ -7,5 +7,6 @@ function DeleteStaff(EmpId) {
         }
     })
         .then(response => response.json())
-        .then(json => console.log(json));
+        .then(json => console.log(json))
+        .then(getHeading());
 }

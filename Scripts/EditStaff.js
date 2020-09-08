@@ -17,6 +17,7 @@ var modal = document.getElementById('notification');
 window.onclick = function (event) {
     if (event.target == modal) {
         modal.style.display = "none";
+        redirectToTable();
     }
 }
 
@@ -63,10 +64,11 @@ function EditStaffValues() {
         });
 
 }
+var staffType;
 function EditStaff() {
     var postBody;
     var x = document.getElementById("Staff").selectedIndex;
-    var staffType = document.getElementsByTagName("option")[x].value;
+    staffType = document.getElementsByTagName("option")[x].value;
     var EmpId = document.getElementById("IEmpId").value;
     var Name = document.getElementById("IName").value;
     var Email = document.getElementById("IEmail").value;
@@ -129,5 +131,10 @@ function EditStaff() {
 function notify() {
     document.getElementById('notification-heading').innerHTML = "Edit Successfull";
     document.getElementById('notification').style.display = 'block';
+
+}
+function redirectToTable() {
+    document.getElementById('notification').style.display = 'none'
+    window.location.href = " file:///C:/Users/Workstation/Desktop/StaffUI/home.html";
 
 }
