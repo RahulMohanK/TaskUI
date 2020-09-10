@@ -1,0 +1,39 @@
+.side-nav
+{
+height:100%;
+width:300px;
+background:#383838;
+position:fixed;
+left:0;
+margin:144px 0 0 0;
+box-shadow:0 0 15px  rgba(0, 0, 0, .2);
+
+}
+.side-nav .side-nav-content
+{
+    display:flex;
+    position:absolute;
+    flex-direction: row;
+    margin:50px 0 0 30px;
+    width:auto;
+}
+
+.side-nav .side-nav-content .content-image
+{
+    background:white;
+    height:50px;
+    width:50px;
+   
+}
+.side-nav .side-nav-content .content-title
+{
+    color:white;
+    position:relative;
+    margin:15px 0 0 20px;
+    font-weight: 1000;
+ 
+    text-align: center;
+  
+   
+    
+}

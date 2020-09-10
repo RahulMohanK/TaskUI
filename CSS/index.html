@@ -1,0 +1,120 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="utf-8" http-equiv="encoding">
+    <link rel="stylesheet" href="Stylesheets/header.css" type="text/css">
+    <link rel="stylesheet" href="Stylesheets/sidenav.css" type="text/css">
+    <link rel="stylesheet" href="Stylesheets/main.css" type="text/css">
+    <title> Demo</title>
+</head>
+
+<body>
+    <div class="header">
+        <div class="header-content">
+            <div class="logo">
+                LOGO
+            </div>
+            <h2 class="heading">
+                Sample Text
+            </h2>
+            <div class="user-logo" onclick="showMenu()">
+                PM
+            </div>
+        </div>
+    </div>
+    <div class="manage-account" id="id-account">
+        <div class=" manage-heading">
+            Manage account
+        </div>
+        <div class="sign-out-button">
+            Signout
+        </div>
+
+    </div>
+    <div class="side-nav">
+        <div class="side-nav-content">
+            <div class="content-image"> </div>
+            <div class="content-title"> Menu</div>
+        </div>
+    </div>
+
+    <div class="main">
+
+        <div class="horizontal-list">
+            <div class="item1">
+
+            </div>
+            <div class="item2">
+
+            </div>
+            <div class="item3">
+
+            </div>
+        </div>
+        <div class="sub-main">
+            <p>
+                CSS is designed to enable the separation of presentation and content, including layout, colors, and
+                fonts.
+                This separation can improve content accessibility, provide more flexibility and control in the
+                specification
+                of presentation characteristics, enable multiple web pages to share formatting by specifying the
+                relevant
+                CSS in a separate .css file which reduces complexity and repetition in the structural content as well as
+                enabling the .css file to be cached to improve the page load speed between the pages that share the file
+                and
+                its formatting.
+            </p>
+            <div class="horizontal-content">
+                <div class="content-left">
+
+                    <div class="item1">
+                        <div class="image" style="background: #e7136d;"> </div>
+                        <div class="title"> Menu</div>
+                        <div class="sub-title"> description</div>
+                    </div>
+                    <div class="item2">
+                        <div class=" image" style="background:  #1318e7;"> </div>
+                        <div class="title"> Menu</div>
+                        <div class="sub-title"> description</div>
+                    </div>
+                    <div class="item3">
+                        <div class="image" style="background:  #1cc50f;"> </div>
+                        <div class="title"> Menu</div>
+                        <div class="sub-title"> description</div>
+                    </div>
+                    <div class="item4">
+                        <div class="image" style="background:  #e75913;"> </div>
+                        <div class="title"> Menu</div>
+                        <div class="sub-title"> description</div>
+                    </div>
+
+                </div>
+                <div class="content-right">
+                    2
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        var visible = false;
+        function showMenu() {
+
+            visible = !visible;
+            if (visible) {
+                document.getElementById('id-account').style.visibility = 'visible';
+            }
+            else {
+                document.getElementById('id-account').style.visibility = 'hidden';
+            }
+        }
+
+    </script>
+</body>
+
+</html>

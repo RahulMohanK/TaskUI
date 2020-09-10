@@ -1,0 +1,132 @@
+.main
+{
+  background: white;
+  width:79%;
+  height:100%;
+  margin:180px 0 0 330px;
+  
+  position: absolute;
+}
+
+.horizontal-list
+{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 200px;
+    
+}
+.horizontal-list .item1
+{
+    background:white;
+    width:580px;
+    color:black;
+    box-shadow: 0 0 20px rgba(0,0,0,.3);
+
+}
+.horizontal-list .item2
+{
+    background:white;
+    width:310px;
+    color:black;
+    box-shadow: 0 0 20px rgba(0,0,0,.3);
+
+}
+.horizontal-list .item3
+{
+    background:white;
+    width:580px;
+    color:black;
+    box-shadow: 0 0 20px rgba(0,0,0,.3);
+
+}
+.sub-main{
+    margin:30px 20px 0 20px;
+}
+.sub-main p{
+ text-align: justify;
+}
+
+.horizontal-content
+{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 250px;
+}
+.horizontal-content .content-left
+{
+    background:white;
+    width:40%;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+
+.content-left > div
+{
+    margin:10px 0 0 10px;
+    position: absolute;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color:black;
+  
+
+}
+.content-left > div .image
+{
+
+    background:white;
+    height:70px;
+    width:70px;
+    border-radius: 5px;
+}
+
+.content-left >div .title
+{
+    color:black;
+    position:relative;
+    margin:8px 0 0 10px;
+    font-weight: 1000; 
+    text-align: center;
+}
+.content-left >div .sub-title
+{
+    color:black;
+    position:relative;
+    margin:20px 0 0 10px;
+    font-weight: 1000; 
+    text-align: center;
+}
+.content-left .item1
+{
+
+position: absolute;
+
+
+}
+.content-left .item2
+{
+margin-left:350px;
+position: absolute;
+
+}
+.content-left .item3
+{
+margin:150px 0 0 350px;
+position: absolute;
+}
+.content-left .item4
+{
+margin:150px 0 0 10px;
+position: absolute;
+
+}
+
+.horizontal-content .content-right
+{
+    background:blue;
+    width:50%;
+}

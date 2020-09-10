@@ -1,0 +1,85 @@
+.header
+{
+  
+    position:fixed;
+    top:0;
+    left:0;
+    width :100%;
+    background: white;
+    height: 150px;
+    box-shadow: 0 0 15px rgba(0,0,0,.2);
+    z-index: 100;
+}
+.header-content
+{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin:30px 0 0 0;
+}
+.logo
+{
+    display: block;
+    background: #383838;
+    height:50px;
+    width: 50px;
+    color:white;
+    padding:15px;
+    margin: 0 0 0 20px;
+    line-height: 50px;
+    text-align: center;
+   
+}
+.user-logo
+{
+    margin:5px 20px 0 0;
+    background: #383838;
+    color:white;
+    border-radius: 50%;
+    width:40px;
+    height:40px;
+    text-align: center;
+    line-height: 40px;
+    padding:10px
+}
+.heading
+{
+    font-weight: bold;
+   
+}
+.manage-account
+{
+    width:250px;
+    height:350px;
+    background:white;
+    box-shadow: 0 0 25px rgba(0,0,0,.2);
+    position: absolute;
+    right:0;
+    top:95px;
+    margin:0 60px 0 0;
+    border-radius: 5px;
+    visibility:hidden;
+    z-index: 100;
+}
+.manage-account .manage-heading
+{
+    margin:20px 0 0 20px;
+    color:#000cff;
+    font-size: 20px;
+    font-weight: 900;
+    
+}
+.manage-account .sign-out-button
+{
+    color:white;
+    margin:255px 0 0 20px;
+    background:#383838;
+    width:80px;
+    height:auto;
+    text-align: center;
+    padding:5px;
+    font-style: bold;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: 900;
+}
