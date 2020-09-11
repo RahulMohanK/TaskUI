@@ -1,0 +1,26 @@
+.table{
+    display: table;
+    border: 3px solid #c1c1c1;
+    border-collapse: collapse;
+    margin:auto ;
+    margin-top:30px;
+    width:100%
+   
+}
+
+.table > div{
+    display: table-row;
+   
+}
+
+.table > div > span{
+    display: table-cell;
+    border-block: 1px solid  #c1c1c1;
+    padding: 10px;
+   
+}
+.table-head
+{
+    color:#666666;
+    font-size: 18px;
+}
