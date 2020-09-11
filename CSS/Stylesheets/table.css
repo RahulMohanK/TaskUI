@@ -10,7 +10,7 @@
 
 .table > div{
     display: table-row;
-   
+    color:#666666;
 }
 
 .table > div > span{
@@ -21,6 +21,6 @@
 }
 .table-head
 {
-    color:#666666;
+    
     font-size: 18px;
 }

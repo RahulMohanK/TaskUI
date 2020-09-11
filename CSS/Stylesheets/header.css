@@ -21,18 +21,18 @@
 {
     display: block;
     background: #383838;
-    height:50px;
-    width: 50px;
+    height:60px;
+    width: 60px;
     color:white;
     padding:15px;
     margin: 0 0 0 20px;
-    line-height: 50px;
+    line-height: 60px;
     text-align: center;
    
 }
 .user-logo
 {
-    margin:5px 20px 0 0;
+    margin:15px 20px 0 0;
     background: #383838;
     color:white;
     border-radius: 50%;
@@ -50,7 +50,7 @@
 .manage-account
 {
     width:250px;
-    height:350px;
+    height:360px;
     background:white;
     box-shadow: 0 0 25px rgba(0,0,0,.2);
     position: absolute;
@@ -72,9 +72,9 @@
 .manage-account .sign-out-button
 {
     color:white;
-    margin:255px 0 0 20px;
+    margin:260px 0 0 20px;
     background:#383838;
-    width:80px;
+    width:90px;
     height:auto;
     text-align: center;
     padding:5px;
@@ -82,4 +82,5 @@
     border-radius: 5px;
     font-size: 20px;
     font-weight: 900;
+   
 }
