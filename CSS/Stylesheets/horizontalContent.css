@@ -40,12 +40,12 @@
    
     color:black;
     position:relative;
-    margin:15px 0 0 15px;
-    font-weight: 1000;  
+    margin:6px 0 0 15px;
+      
 }
-.content-left >div .title > span{
-    font-size: large;
-    
+.content-left >div .title > .title-head{
+    font-size: 30px;
+    font-weight: 1000;
 }
 .title-text
 {
@@ -101,6 +101,7 @@ position: absolute;
 }
 .content-right > p{
   padding-bottom:20px;
+  text-align: left;
   
    
 }
